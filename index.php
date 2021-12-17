@@ -1,3 +1,8 @@
+<?php
+
+$testo = 'Lorem'. 'ipsum'. 'dolor'. 'sit'. 'amet'. 'consectetur'.' '. $_GET('parolaUtente');
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,8 +13,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h2>Ciao</h2>
-    </div>
+    <p> <?php echo $testo; ?> </p>
+    <p> la frase contiene <?php echo strlen($testo); ?> parole. </p>
+    
 </body>
 </html>
